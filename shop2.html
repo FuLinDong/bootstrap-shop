@@ -1,0 +1,246 @@
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	    <style type="text/css">
+	    	html{
+			    height: 100%;
+			}
+			/*让footer永远在底下start*/
+			body{
+			    display: flex;
+			    flex-direction: column;
+			    height: 100%;
+			}
+	    	header{
+			   flex: 0 0 auto;
+			}
+			
+			.main-content{
+			   flex: 1 0 auto;
+			}		
+			footer{
+			   flex: 0 0 auto;
+			   background-color: black;
+			}
+			/*让footer永远在底下end*/
+			footer>address{
+				padding-top:20px;
+				color: #FFFFFF;
+				text-align: center;
+			}
+	    	.badge-danger{
+	    		background-color: #d9534f;
+	    		border-radius: 4px;
+	    	}
+	    	.badge-success{
+	    		background-color: #5cb85c;
+	    		border-radius: 4px;
+	    	}
+	    	.badge-warning{
+	    		background-color: #f0ad4e;
+	    		border-radius: 4px;
+	    	}
+	    	.badge-info{
+	    		background-color: #5bc0de;
+	    		border-radius: 4px;
+	    	}
+	    	.capion{
+	    		text-align: center;
+	    	}
+	    	.h4{
+	    		display: inline-block;
+                width: 100%;
+                color: #fff;
+                background-color: #337ab7; 
+			    margin-top: 10px;
+			    padding: 6px 12px;
+			    margin-bottom: 0;
+			    border: 1px solid transparent;
+			    border-top-right-radius:4px ;
+			    border-top-left-radius:4px ;
+			    font-size: 14px;
+			    font-weight: 400;
+			    line-height: 1.42857143;			  
+			    vertical-align: middle;		   
+			    font-size: 14px;
+			    font-weight: 400;
+			    white-space: nowrap;
+			    vertical-align: middle;
+			    -ms-touch-action: manipulation;
+			    touch-action: manipulation;
+	    	}
+	    	.h4-primary{
+                background-color: #337ab7; 
+	    	}	    	
+	    	.h4-success{
+           
+	    </style>
+	  </head>
+	  <body>
+	  	<header class="header">
+		     <nav class="navbar navbar-inverse bor">		       
+		        <div class="navbar-header">		          
+		          <a class="navbar-brand" href="#">电子商店</a>
+		       </div>		      
+		       <ul class="nav navbar-nav navbar-right" style="margin-right: 20px;">
+		         <li><a href="#">商品</a></li>
+		         <li><a href="#">注册</a></li>
+		         <li><a href="#">登陆</a></li>
+		       </ul>
+		       <div class="navbar-right" style="margin-right: 20px;">
+		         <form class="navbar-form navbar-left">
+		           <input type="text" class="form-control" placeholder="输入商品"/>
+		           <button type="submit" class="btn btn-primary">搜索</button>
+		         </form>
+		       </div>
+		    </nav>
+	  	</header>
+	    <div class="container main-content">
+	    	<section class="col-md-3">
+	    		<div class="">
+	    			<h4 class="h4 h4-primary">电子产品</h4>
+		    		<ul class="list-group">
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-danger  pull-right">234</span>手机</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-success pull-right">234</span>手机</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-warning pull-right">234</span>笔记本</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-info pull-right">234</span>平板</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-info  pull-right">234</span>显示器</a></li>
+		    		</ul>
+	    		</div>
+	    		<div>
+	    			<h4 class="h4 h4-success">智能产品</h4>
+		    		<ul class="list-group">
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-danger  pull-right">234</span>手环</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-info pull-right">234</span>手表</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-warning pull-right">234</span>笔记本</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-info pull-right">234</span>VR眼镜</a></li>
+		    		</ul>
+	    		</div>
+	    		<div class="">
+	    			<h4 class="h4 h4-primary">手机配件</h4>
+		    		<ul class="list-group">
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-danger  pull-right">234</span>耳机</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-info pull-right">234</span>移动电源</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-warning pull-right">234</span>手机壳</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-info pull-right">234</span>数据线</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-success  pull-right">234</span>手机支架</a></li>
+		    			<li class="list-group-item"><a href="#"><span class="badge badge-info  pull-right">234</span>手机贴膜</a></li>
+		    		</ul>
+	    		</div>
+	    	</section>
+	    	<section class="col-md-9">
+	    		<div class="panel">
+	    			<div class="panel-heading">
+	    				<ul class="breadcrumb">
+			    			<li><a href="#">首页</a></li>
+			    			<li><a href="#">手机</a></li>
+			    		</ul>
+	    			</div>
+	    			<div class="panel-body">
+	    				<div class="row">
+	    					<div class="col-sm-6 col-md-3">
+	    						<div class="thumbnail">
+	    							<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg" alt="手机图片1"/>
+	    						</div>
+	    						<div class="capion">
+	    							<h3>OPPO</h3>
+	    							<p><span class="">￥</span>1566</p>
+	    							<button class="btn btn-success">立即购买</button>
+	    						</div>
+	    					</div>
+	    					<div class="col-sm-6 col-md-3">
+	    						<div class="thumbnail">
+	    							<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg" alt="手机图片2"/>
+	    						</div>
+	    						<div class="capion">
+	    							<h3>华为</h3>
+	    							<p><span class="">￥</span>2566</p>
+	    							<button class="btn btn-success">立即购买</button>
+	    						</div>
+	    					</div>
+	    					<div class="col-sm-6 col-md-3">
+	    						<div class="thumbnail">
+	    							<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg" alt="手机图片3"/>
+	    						</div>
+	    						<div class="capion">
+	    							<h3>苹果</h3>
+	    							<p><span class="">￥</span>4566</p>
+	    							<button class="btn btn-success">立即购买</button>
+	    						</div>
+	    					</div>
+	    					<div class="col-sm-6 col-md-3">
+	    						<div class="thumbnail">
+	    							<img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg" alt="手机图片4"/>
+	    						</div>
+	    						<div class="capion">
+	    							<h3>锤子</h3>
+	    							<p><span class="">￥</span>3000</p>
+	    							<button class="btn btn-success">立即购买</button>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="panel">
+	    			<div class="panel-heading">
+	    				<ul class="breadcrumb">
+			    			<li><a href="#">首页</a></li>
+			    			<li><a href="#">笔记本</a></li>
+			    		</ul>
+	    			</div>
+	    			<div class="panel-body">
+	    				<div class="row">
+	    					<div class="col-sm-6 col-md-3">
+	    						<div class="thumbnail">
+	    							<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg" alt="电脑图片1"/>
+	    						</div>
+	    						<div class="capion">
+	    							<h3>华硕</h3>
+	    							<p><span class="">￥</span>5500</p>
+	    							<button class="btn btn-success">立即购买</button>
+	    						</div>
+	    					</div>
+	    					<div class="col-sm-6 col-md-3">
+	    						<div class="thumbnail">
+	    							<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg" alt="电脑图片2"/>
+	    						</div>
+	    						<div class="capion">
+	    							<h3>联想</h3>
+	    							<p><span class="">￥</span>6000</p>
+	    							<button class="btn btn-success">立即购买</button>
+	    						</div>
+	    					</div>
+	    					<div class="col-sm-6 col-md-3">
+	    						<div class="thumbnail">
+	    							<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg" alt="电脑图片3"/>
+	    						</div>
+	    						<div class="capion">
+	    							<h3>苹果</h3>
+	    							<p><span class="">￥</span>10000</p>
+	    							<button class="btn btn-success">立即购买</button>
+	    						</div>
+	    					</div>
+	    					<div class="col-sm-6 col-md-3 con-thumbnail">
+	    						<div class="thumbnail thumbnail-con">
+	    							<img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg" alt="电脑图片4"/>
+	    						</div>
+	    						<div class="capion">
+	    							<h3>戴尔</h3>
+	    							<p><span class="">￥</span>5000</p>
+	    							<button class="btn btn-success">立即购买</button>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</section>    	
+	  	</div>
+	    <footer class="footer">
+	    	<address>&copy;2017 | Email:1556842331@qq.com</address>
+	    </footer>
+	  </body>
+	</html>
+	
+
